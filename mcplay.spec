@@ -2,7 +2,7 @@ Summary:	A text terminal music player
 Summary(pl):	Terminalowy odtwarzacz muzyczny
 Name:		mcplay
 Version:	0.3i
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.yahuxo.de/mcplay/%{name}-%{version}.tar.gz
