@@ -1,0 +1,39 @@
+--- mcplay-0.3i/player.c~	Sun Apr 28 15:30:35 2002
++++ mcplay-0.3i/player.c	Mon Apr 29 17:46:13 2002
+@@ -88,7 +88,7 @@
+                "^.*\\.(mid|midi)$" );
+ #endif
+ #ifdef HAVE_PLAYMIDI
+-   cusom_new( &data->player[PLAYER_MID],
++   custom_new( &data->player[PLAYER_MID],
+               playmidi,
+               "^.*\\.(mid|midi)$" );
+ #endif
+--- mcplay-0.3i/Makefile~	Mon Apr 29 17:45:14 2002
++++ mcplay-0.3i/Makefile	Mon Apr 29 17:45:31 2002
+@@ -13,12 +13,12 @@
+ SOX_CFLAGS=-DHAVE_SOX
+ 
+ #uncomment _one_ of these for midi support
+-MID_CFLAGS=-DHAVE_DRVMIDI
+-#MID_CFLAGS=-DHAVE_PLAYMIDI
++#MID_CFLAGS=-DHAVE_DRVMIDI
++MID_CFLAGS=-DHAVE_PLAYMIDI
+ 
+ #uncomment these two lines if you have lirc
+-#LIRC_CFLAGS=-DHAVE_LIRC
+-#LIRC_LFLAGS=-llirc_client
++LIRC_CFLAGS=-DHAVE_LIRC
++LIRC_LFLAGS=-llirc_client
+ 
+ #set dir in which the logfile will be placed (also see -l option)
+ #LOG_CFLAGS=-DLOG_DIR_S=\"/tmp\"
+@@ -57,7 +57,7 @@
+ GLIB_CFLAGS=`glib-config --cflags`
+ GLIB_LFLAGS=`glib-config --libs`
+ 
+-NCURSES_CFLAGS=
++NCURSES_CFLAGS=-I/usr/include/ncurses
+ NCURSES_LFLAGS=-lncurses
+ 
+ CFLAGS=$(MY_CFLAGS) $(PLAYER_CFLAGS) $(GLIB_CFLAGS) $(NCURSES_CFLAGS) $(LIRC_CFLAGS)
