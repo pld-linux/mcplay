@@ -5,9 +5,9 @@ Version:	0.3i
 Release:	1
 License:	GPL
 Group:		Applications/Sound
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://www.yahuxo.de/mcplay/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config.patch
-URL:		-
+URL:		http://www.yahuxo.de/mcplay/
 BuildRequires:	ncurses-devel
 BuildRequires:	glib-devel
 BuildRequires:	lirc-devel
