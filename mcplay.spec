@@ -18,11 +18,11 @@ Requires:	vorbis-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A text terminal mp3 player. It can play mp3, ogg, wav, mid and other
+A text terminal MP3 player. It can play MP3, ogg, wav, mid and other
 types of music files.
 
 %description -l pl
-Terminalowy odtwarzacz mp3. Mo¿e odtwarzaæ pliki muzyczne mp3, ogg,
+Terminalowy odtwarzacz MP3. Mo¿e odtwarzaæ pliki muzyczne MP3, ogg,
 wav, mid i inne.
 
 %prep
