@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.yahuxo.de/mcplay/%{name}-%{version}.tar.gz
+# Source0-md5:	11448f55ea7d6b337ec3b9e2c0bf7b13
 Patch0:		%{name}-config.patch
 URL:		http://www.yahuxo.de/mcplay/
 BuildRequires:	lirc-devel
