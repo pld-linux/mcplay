@@ -1,5 +1,5 @@
-Summary:	A console music player.
-Summary(pl):	Konsolowy odtwarzacz muzyczny.
+Summary:	A console music player
+Summary(pl):	Konsolowy odtwarzacz muzyczny
 Name:		mcplay
 Version:	0.3i
 Release:	1
@@ -8,22 +8,22 @@ Group:		Applications/Sound
 Source0:	http://www.yahuxo.de/mcplay/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config.patch
 URL:		http://www.yahuxo.de/mcplay/
-BuildRequires:	ncurses-devel
 BuildRequires:	glib-devel
 BuildRequires:	lirc-devel
+BuildRequires:	ncurses-devel
 Requires:	mpg123
-Requires:	verbis-tools
-Requires:	sox
 Requires:	playmidi
+Requires:	sox
+Requires:	vorbis-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A colsole mp3 player. It can play mp3, ogg, wav, mid and other types
+A console mp3 player. It can play mp3, ogg, wav, mid and other types
 of music files.
 
 %description -l pl
-Konsolowy odtwarzacz mp3. Mo¿e odtwarzaæ pliki mp3, ogg, wav, mid i
-inne.
+Konsolowy odtwarzacz mp3. Mo¿e odtwarzaæ pliki muzyczne mp3, ogg, wav,
+mid i inne.
 
 %prep
 %setup -q
