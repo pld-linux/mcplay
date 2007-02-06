@@ -30,7 +30,9 @@ WAV, mid i inne.
 %patch0 -p1
 
 %build
-%{__make} MY_CFLAGS="%{rpmcflags}"
+%{__make} \
+	CC="%{__cc}" \
+	MY_CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
