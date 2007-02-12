@@ -1,5 +1,5 @@
 Summary:	A text terminal music player
-Summary(pl):	Terminalowy odtwarzacz muzyczny
+Summary(pl.UTF-8):   Terminalowy odtwarzacz muzyczny
 Name:		mcplay
 Version:	0.3i
 Release:	2
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A text terminal MP3 player. It can play MP3, Ogg, WAV, mid and other
 types of music files.
 
-%description -l pl
-Terminalowy odtwarzacz MP3. Mo¿e odtwarzaæ pliki muzyczne MP3, Ogg,
+%description -l pl.UTF-8
+Terminalowy odtwarzacz MP3. MoÅ¼e odtwarzaÄ‡ pliki muzyczne MP3, Ogg,
 WAV, mid i inne.
 
 %prep
