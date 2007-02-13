@@ -1,5 +1,5 @@
 Summary:	A text terminal music player
-Summary(pl.UTF-8):   Terminalowy odtwarzacz muzyczny
+Summary(pl.UTF-8):	Terminalowy odtwarzacz muzyczny
 Name:		mcplay
 Version:	0.3i
 Release:	2
